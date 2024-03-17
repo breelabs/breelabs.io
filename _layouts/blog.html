@@ -9,7 +9,7 @@
     
 {% include primary_feed.html %} 
 
-{% include home_featured.html %} 
+{% include blog_current.html %} 
 
     <!-- Archive -->
     <section
@@ -184,11 +184,11 @@
         {% if paginator.page <= 5 %}
             {% if forloop.index <= 5 %}
                 {% if forloop.first and page == paginator.page %}
-                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 bg-red-600 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
                 {% elsif forloop.first %}
-                    <a href="/blog/" class="nline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">1</a>
+                    <a href="/blog/" class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">1</a>
                 {% elsif page == paginator.page %}
-                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm bg-red-600 font-medium text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
                 {% else %}
                     <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                 {% endif %}
@@ -196,27 +196,27 @@
                 {% if paginator.page == 5 %}
                     <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
                 {% endif %}
-                    <span>...</span>
-                    <a class="iinline-flex h-12 w-12 items-center justify-center text-base font-medium text-gray-500" href="/blog/page/{{ last_page }}/">{{ last_page }}</a>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">...</span>
+                    <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ last_page }}/">{{ last_page }}</a>
                 {% break %}
             {% endif %}
         {% elsif paginator.page >= last_five %}
             {% if forloop.index >= last_five %}
                 {% if forloop.index == last_five %}
                     <a class="inline-flex h-12 w-12 items-center justify-center text-base font-medium text-gray-500" href="/blog/">1</a>
-                    <span>...</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">...</span>
                 {% if page == last_five %}
                     <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ page | minus: 1 }}/">{{ page | minus: 1 }}</a>
                 {% endif %}
                 {% if page == paginator.page %}
-                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-red-600 bg-gray-50 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
                 {% else %}
                     <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ page }}/">{{ page }}</a>
                 {% endif %}
                 {% elsif forloop.last and page == paginator.page %}
-                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium bg-red-600 text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
                 {% elsif page == paginator.page %}
-                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium bg-red-600 text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
                 {% else %}
                     <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ page }}/">{{ page }}</a>
                 {% endif %}
@@ -226,21 +226,21 @@
                 <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/">1</a>
             {% endif %}
             {% if forloop.index == paginator.page | minus: 2 %}
-                <span>...</span>
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">...</span>
                 <a class="inline-flex h-12 w-12 items-center justify-center text-base font-medium text-gray-500"" href="/blog/page/{{ page | minus: 2 }}/">{{ page | minus: 2 }}</a>
             {% endif %}
             {% if forloop.index == paginator.page | minus: 1 %}
                 <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ page | minus: 1 }}/">{{ page | minus: 1 }}</a>
             {% endif %}
             {% if page == paginator.page %}
-                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">{{ page }}</span>
+                <span class="inline-flex h-12 w-12 items-center justify-center bg-red-600 text-white rounded-xl bg-gray-50 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-gray-100 hover:text-white">{{ page }}</span>
             {% endif %}
             {% if forloop.index == paginator.page | plus: 1 %}
                 <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ page | plus: 1 }}/">{{ page | plus: 1 }}</a>
             {% endif %}
             {% if forloop.index == paginator.page | plus: 2 %}
                 <a class="inline-flex h-12 w-12 items-center justify-center text-base font-medium text-gray-500" href="/blog/page/{{ page | plus: 2 }}/">{{ page | plus: 2 }}</a>
-                <span>...</span>
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700">...</span>
             {% endif %}
             {% if forloop.last %}
                 <a class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-sm font-medium text-gray-500 transition duration-300 ease-in-out hover:bg-gray-100 hover:text-gray-700" href="/blog/page/{{ forloop.index }}/">{{ forloop.index }}</a>

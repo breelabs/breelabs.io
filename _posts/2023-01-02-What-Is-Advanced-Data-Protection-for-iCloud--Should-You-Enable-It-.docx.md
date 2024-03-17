@@ -16,7 +16,7 @@ image: /images/covers/2023/Header-iCloudEnableIt.jpg
 thumbnail: /images/covers/2023/Header-iCloudEnableIt.jpg
 cta: 4
 comments: true
-featuredHome: true
+featuredHome: false
 ---
 In early December, Apple made a surprise announcement: [Advanced Data
 Protection for
