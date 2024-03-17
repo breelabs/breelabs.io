@@ -16,7 +16,7 @@ image: /images/covers/2023/Header-HackerSecurity.jpg
 thumbnail: /images/covers/2023/Header-HackerSecurity.jpg
 cta: 3
 comments: true
-featuredPost: true
+featuredPost: false
 ---
 Whatever consumer electronics product you can name, there's probably a
 "smart" version that you configure via an app or Internet-connected

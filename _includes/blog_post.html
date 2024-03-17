@@ -34,12 +34,6 @@
               {{ page.title }}
             </h2>
 
-            <div>
-              <p class="mt-4 text-base leading-loose text-gray-600">
-                {{ page.content | strip_html | truncatewords: 30 }}
-              </p>
-            </div>
-
             <!-- Author meta -->
             <div class="mt-6 flex items-center sm:mt-8">
               <a href="#" class="mr-3 flex-shrink-0">
@@ -231,6 +225,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          
+          <div class="py-8 sm:py-10">
+          
+          {% include disqus-comments.html %}
+          
           </div>
         </footer>
       </div>

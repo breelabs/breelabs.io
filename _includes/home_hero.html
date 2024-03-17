@@ -18,7 +18,7 @@
               data-src="{{ site.site_url }}{{ post.thumbnail }}"
             />
           </a>
-		 {% for category in post.categories %}
+		 {% for category in post.categories limit:1 %}
 		 
           <!-- Content -->
           <div class="mt-6 md:align-middle">
@@ -106,7 +106,7 @@
               <div
                 class="order-1 mt-5 w-full px-2 sm:mt-0 sm:max-w-sm sm:pl-0 sm:pr-5 lg:order-2 lg:mt-4 xl:ml-5 xl:mt-0 xl:flex-1"
               >
-              {% for category in post.categories %}
+              {% for category in post.categories limit:1 %}
               
                 <a
                   href="/blog/category/{{ category }}"

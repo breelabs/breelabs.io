@@ -40,7 +40,7 @@
               >
                 <div>
                 
-                {% for category in post.categories %}
+                {% for category in post.categories limit:1 %}
                 
                   <a
                     href="/blog/category/{{ category }}"

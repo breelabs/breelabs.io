@@ -124,7 +124,7 @@
               >
                 <div>
                 
-                {% for category in post.categories %}
+                {% for category in post.categories limit:1 %}
                 
                   <a
                     href="/blog/category/{{ category }}"
@@ -136,7 +136,7 @@
                   <h3
                     class="mt-2.5 text-xl font-medium leading-tight text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline sm:text-2xl lg:text-xl xl:text-2xl"
                   >
-                    <a href="post.html">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
                       <span class="absolute inset-0" aria-hidden="true"></span>
                       {{ post.title }}
                     </a>
