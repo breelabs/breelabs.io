@@ -8,9 +8,22 @@
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <language>en</language>
         <copyright>2023</copyright>
-        <pubDate>Wed, 13 Mar 2024 00:09:04 -0400</pubDate>
-        <lastBuildDate>Wed, 13 Mar 2024 00:09:04 -0400</lastBuildDate>
+        <pubDate>Sun, 24 Mar 2024 15:33:45 -0400</pubDate>
+        <lastBuildDate>Sun, 24 Mar 2024 15:33:45 -0400</lastBuildDate>
         <atom:link href="http://breelabs.com/appcasts/bf_appcast.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>BeFit Version 7.4</title>
+            <description><![CDATA[<p>- Fixed Graphing System
+<br />- Focused on improving the quality of data 
+<br />- Imported updated USDA Dataset 
+<br />- Bug fixes and removed deprecated code.</p>
+]]></description>
+            <pubDate>Thu, 29 Feb 2024 07:26:23 -0500</pubDate>
+            <enclosure url="http://breelabs.com/appcasts/BeFitTracker74.zip" length="4087379" type="application/zip" sparkle:dsaSignature="MC0CFBmTjAEMATA5SsHcCroz1c2E1QzMAhUApH89V4nHs6Eg3HSIqNFimXOUyAw=" sparkle:edSignature="ZJo0WSRejhrGycjewzALP9RvdTyZm4yFkv/Ublnh365VXhWvE0phD5qRXyK921+F1NMKMKPt6iuOpMZ0e3gQDA=="/>
+            <guid isPermaLink="false">BA02AEB0-3A8F-4B84-B146-C16E4D6F511A</guid>
+            <sparkle:version>7.3.0</sparkle:version>
+            <sparkle:shortVersionString>Version 7.3.0</sparkle:shortVersionString>
+        </item>
         <item>
             <title>BeFit Version 7.30</title>
             <description><![CDATA[<p>Sparkle Updates</p>
