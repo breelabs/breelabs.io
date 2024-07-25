@@ -19,7 +19,7 @@ thumbnail: /images/covers/2023/Header-Detail.png
 cta: 2
 comments: true
 featuredPost: false
-featuredHome: true
+featuredHome: false
 ---
 Mark Cuban, the renowned entrepreneur and investor, affirms, "One of the keys to my success undoubtedly was and is my attention to detail." Attention to detail is one hundred percent a learned skill. In my experience, those who work with and in the technology industry ultimately learn early on the importance of embracing technology as part of their overall day to day. 
 
