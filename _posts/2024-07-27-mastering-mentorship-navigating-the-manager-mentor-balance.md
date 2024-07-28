@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2023-10-27'
+date: '2024-07-27'
 author: Jon Brown
 permalink: /blog/mastering-mentorship-navigating-the-manager-mentor-balance/
 published: true
