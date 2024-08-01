@@ -37,7 +37,6 @@ Perhaps the most profound transformation occurs within the entrepreneur’s mind
 
 {% include videos/video.html id="OmbHgxI0zjY" header="/images/covers/2024/Header-Partnerships.png" %}
 
-
 ## Weaving the Tapestry of Success Together
 
 As we navigate the complexities of the business world, let us remember that partnerships are not just transactions; they are relationships built on trust, mutual benefit, and shared goals. By embracing the spirit of collaboration, we not only elevate our individual enterprises but also contribute to the collective prosperity of our industries.
