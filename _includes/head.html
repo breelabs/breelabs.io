@@ -1,7 +1,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#1abd6f">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="{{ page.keywords }}">
+  	<meta name="twitter:description" content="{{ page.description }}">
+	<meta property="og:type" content="{{ page.ogtype }}">
 
+	{% if site.production == true and page.sitemap != false  %}
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	{% else %}
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	{% endif %}
+	
+	{% seo %}
+		
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +33,7 @@
     <!-- AlpineJS -->
     <script
       defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- Lazyload CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.7.0/dist/lazyload.min.js"></script>
@@ -49,6 +64,4 @@
     <meta name="msapplication-TileColor" content="#f1f1f1" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- PAGE TITLE -->
-    <title>Breelabs</title>
   </head>

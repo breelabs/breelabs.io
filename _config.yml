@@ -18,7 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Breelabs
+title: "Breelabs"
+tagline: "Your Partner in Starting and Growing Your Business"
+description: "Discover Breelabs, a premier consultancy dedicated to helping entrepreneurs take the first step in starting and growing their business. Learn about our mission, values, and the experienced team that provides personalized guidance and innovative strategies to ensure your business's success."
+author: "Jon Brown"
+logo: "/images/bree-logo.png"
+locale: "en_US"
+url: "https://breelabs.com/"
+production:          true
 email: jon@breelabs.com
 description: Focused on helping aspiring entrepreneurs take their first step
 baseurl: "" # the subpath of your site, e.g. /blog
