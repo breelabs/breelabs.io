@@ -53,8 +53,9 @@ upgraded:
     storage.
     <img alt="Blog Photo" src="{{ site.site_cdn }}/images/blog/2023/20230102Ap/image2.jpeg" class="img-fluid rounded m-2" width="700" />
 
--   **[Live
-    Activities](https://ios.gadgethacks.com/how-to/use-live-activities-your-iphone-track-scores-rides-pets-chats-tasks-workouts-and-more-glance-0385231/):**
+-   **Live Activities:**
+
+
     With iOS 16.1, Apple also unveiled Live Activities, a new type of
     dynamic notification that can appear on the iPhone's Lock Screen or
     the iPhone 14 Pro's Dynamic Island. Live Activities allow apps to
