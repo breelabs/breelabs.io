@@ -47,6 +47,7 @@
               <span>
                 <a
                   href="{{ site.url }}"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group flex items-center text-gray-500 no-underline transition duration-300 ease-in-out hover:text-gray-900 hover:no-underline"
                 >
                   <!-- Heroicon name: solid/home -->
@@ -106,10 +107,12 @@
             <div class="md:col-span-1">
               <a
                 href="{{ post.url | prepend: site.baseurl }}"
+                alt="{{ post.url | prepend: site.baseurl }}"
                 class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-gray-50 md:aspect-h-1 md:aspect-w-1"
               >
                 <img
                   data-src="{{ site.site_url }}{{ post.thumbnail }}"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
                 />
               </a>
@@ -128,6 +131,7 @@
                 
                   <a
                     href="/blog/category/{{ category }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="transition-color relative text-tiny font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
                   >
                     {{ category }}
@@ -136,7 +140,7 @@
                   <h3
                     class="mt-2.5 text-xl font-medium leading-tight text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline sm:text-2xl lg:text-xl xl:text-2xl"
                   >
-                    <a href="{{ post.url | prepend: site.baseurl }}">
+                    <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.url | prepend: site.baseurl }}">
                       <span class="absolute inset-0" aria-hidden="true"></span>
                       {{ post.title }}
                     </a>
@@ -154,6 +158,7 @@
                   <!-- Author Image -->
                   <a
                     href="#"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="relative mr-3 animate-pulse rounded-lg bg-gray-50"
                   >
                     <img
@@ -169,7 +174,8 @@
                     >
                     <a
                       class="relative font-medium text-gray-700 hover:underline"
-                      href="author.html"
+                      href="#"
+                      alt="{{ post.url | prepend: site.baseurl }}"
                       >Jon Brown</a
                     >
 
@@ -231,10 +237,12 @@
                 <!-- Image -->
                 <a
                   href="{{ post.url | prepend: site.baseurl }}"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group relative z-10 animate-pulse overflow-hidden rounded-2xl bg-gray-100"
                 >
                   <img
                     data-src="{{ site.site_url }}{{ post.thumbnail }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="lazy h-24 w-24 rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110 sm:h-28 sm:w-28 lg:h-20 lg:w-20 xl:h-24 xl:w-24"
                   />
                 </a>
@@ -247,6 +255,7 @@
                     <div>
                       <a
                         href="{{ post.url | prepend: site.baseurl }}"
+                        alt="{{ post.url | prepend: site.baseurl }}"
                         class="text-md font-medium leading-snug tracking-normal text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline"
                       >
                         {{ post.title }}
@@ -262,6 +271,7 @@
                           <a
                             class="font-medium text-gray-700 hover:underline"
                             href="#"
+                            alt="{{ post.url | prepend: site.baseurl }}"
                             >Jon Brown</a
                           >
                         </div>
@@ -293,7 +303,7 @@
                {% for category in site.categories limit:10 %}
                	{% capture category_name %}{{ category | first }}{% endcapture %}
                 <li>
-                  <a href="/blog/category/{{ category_name }}">
+                  <a href="/blog/category/{{ category_name }}" alt="{{ post.url | prepend: site.baseurl }}">
                     <span
                       class="m-1 inline-flex items-center rounded-full border border-gray-300/70 bg-transparent px-4 py-1 text-sm font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700 sm:px-4 sm:py-1.5"
                     >
@@ -323,6 +333,7 @@
                 <!-- Facebook -->
                 <a
                   href="https://www.facebook.com/breelabs"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group flex w-full items-center justify-between"
                 >
                   <div class="flex items-center">
@@ -384,6 +395,7 @@
                 <a
                   href="https://www.linkedin.com/company/breelabs/"
                   class="group flex w-full items-center justify-between"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                 >
                   <div class="flex items-center">
                     <div>

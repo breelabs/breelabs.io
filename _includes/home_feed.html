@@ -26,10 +26,11 @@
               <div
                 class="aspect-h-1 aspect-w-2 relative z-10 w-full animate-pulse overflow-hidden rounded-t-2xl bg-gray-50"
               >
-                <a href="{{ post.url | prepend: site.baseurl }}">
+                <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.url | prepend: site.baseurl }}">
                   <img
                     class="lazy absolute inset-0 h-full w-full rounded-t-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
-                    data-src="{{ site.site_url }}{{ post.thumbnail }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
+                    data-src="{{ site.site_url }}{{ post.thumbnail }}" alt="{{ post.url | prepend: site.baseurl }}"
                   />
                 </a>
               </div>
@@ -44,6 +45,7 @@
                 
                   <a
                     href="/blog/category/{{ category }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="transition-color relative text-tiny font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
                   >
                     {{ category }}
@@ -54,7 +56,7 @@
                   <h3
                     class="mt-3 text-xl font-medium leading-tight text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline sm:text-2xl lg:text-xl xl:text-2xl"
                   >
-                    <a href="{{ post.url | prepend: site.baseurl }}">
+                    <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.url | prepend: site.baseurl }}">
                       <span class="absolute inset-0" aria-hidden="true"></span>
                       {{ post.title }}
                       <span class="sr-only"
@@ -72,16 +74,19 @@
                 <div class="mt-5 flex items-center sm:mt-6">
                   <a
                     href="#"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="relative h-10 w-10 animate-pulse rounded-xl bg-gray-50"
                   >
                     <img
                       data-src="{{ site.site_url }}/images/jon.jpg"
+                      alt="{{ post.url | prepend: site.baseurl }}"
                       class="lazy h-full w-full rounded-xl object-cover object-center opacity-0 transition duration-300 ease-in-out"
                     />
                   </a>
                   <div class="ml-3">
                     <a
                       href="#"
+                      alt="{{ post.url | prepend: site.baseurl }}"
                       class="relative text-sm font-medium text-gray-700 hover:underline"
                     >
                      Jon Brown
@@ -125,10 +130,12 @@
                 <!-- Image -->
                 <a
                   href="{{ post.url | prepend: site.baseurl }}"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group relative z-10 animate-pulse overflow-hidden rounded-2xl bg-gray-100"
                 >
                   <img
                     data-src="{{ site.site_url }}{{ post.thumbnail }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="lazy h-24 w-24 rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110 sm:h-28 sm:w-28 lg:h-20 lg:w-20 xl:h-24 xl:w-24"
                   />
                 </a>
@@ -141,6 +148,7 @@
                     <div>
                       <a
                         href="{{ post.url | prepend: site.baseurl }}"
+                        alt="{{ post.url | prepend: site.baseurl }}"
                         class="text-md font-medium leading-snug tracking-normal text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline"
                       >
                         {{ post.title }}
@@ -155,6 +163,7 @@
                           <span class="text-gray-500">By </span>
                           <a
                             class="font-medium text-gray-700 hover:underline"
+                            alt="{{ post.url | prepend: site.baseurl }}"
                             href="#"
                             >Jon Brown</a
                           >
@@ -187,7 +196,7 @@
                {% for category in site.categories limit:10 %}
                	{% capture category_name %}{{ category | first }}{% endcapture %}
                 <li>
-                  <a href="/blog/category/{{ category_name }}">
+                  <a href="/blog/category/{{ category_name }}" alt="{{ post.url | prepend: site.baseurl }}">
                     <span
                       class="m-1 inline-flex items-center rounded-full border border-gray-300/70 bg-transparent px-4 py-1 text-sm font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700 sm:px-4 sm:py-1.5"
                     >
@@ -217,6 +226,7 @@
                 <!-- Facebook -->
                 <a
                   href="https://www.facebook.com/breelabs"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group flex w-full items-center justify-between"
                 >
                   <div class="flex items-center">
@@ -277,6 +287,7 @@
                 <!-- Linkedin -->
                 <a
                   href="https://www.linkedin.com/company/breelabs/"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="group flex w-full items-center justify-between"
                 >
                   <div class="flex items-center">

@@ -11,10 +11,12 @@
           <!-- Image -->
           <a
             href="{{ post.url | prepend: site.baseurl }}"
+            alt="{{ post.url | prepend: site.baseurl }}"
             class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-gray-100"
           >
             <img
               class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
+              alt="{{ post.url | prepend: site.baseurl }}"
               data-src="{{ site.site_url }}{{ post.thumbnail }}"
             />
           </a>
@@ -24,20 +26,21 @@
           <div class="mt-6 md:align-middle">
             <a
               href="/blog/category/{{ category }}"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="transition-color relative text-sm font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
               >{{ category }}</a
             >
             
             {% if forloop.last != true %} {% endif %} {% endfor %}
             
-            <a href="{{ post.url | prepend: site.baseurl }}" class="group mt-3 block">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="group mt-3 block" alt="{{ post.url | prepend: site.baseurl }}">
               <h2
                 class="text-3xl font-medium tracking-normal text-gray-900 decoration-gray-800 decoration-3 transition duration-300 ease-in-out group-hover:underline md:tracking-tight lg:text-4xl lg:leading-tight"
               >
                 {{ post.title }}
               </h2>
               <div>
-                <p class="mt-4 text-base leading-loose text-gray-600">
+                <p class="mt-4 text-base leading-loose text-gray-600" alt="{{ post.url | prepend: site.baseurl }}">
                   {{ post.content | strip_html | truncatewords: 60 }}
                 </p>
               </div>
@@ -47,16 +50,19 @@
             <div class="mt-4 flex items-center sm:mt-8">
               <a
                 href="#"
+                alt="{{ post.url | prepend: site.baseurl }}"
                 class="h-10 w-10 animate-pulse rounded-xl bg-gray-50"
               >
                 <img
                   data-src="{{ site.site_url }}/images/jon.jpg"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="lazy h-full w-full rounded-xl object-cover object-center opacity-0 transition duration-300 ease-in-out"
                 />
               </a>
               <div class="ml-3">
                 <a
                   href="#"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="text-sm font-medium text-gray-800 hover:underline"
                 >
                   Jon Brown
@@ -97,6 +103,7 @@
                 >
                   <img
                     data-src="{{ site.site_url }}{{ post.thumbnail }}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
                   />
                 </div>
@@ -110,6 +117,7 @@
               
                 <a
                   href="/blog/category/{{ category }}"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="transition-color text-xs font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
                 >
                   {{ category }}
@@ -117,7 +125,7 @@
                 
                 {% if forloop.last != true %} {% endif %} {% endfor %}
 
-                <a href="{{ post.url | prepend: site.baseurl }}">
+                <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.url | prepend: site.baseurl }}">
                   <h3
                     class="mt-2 text-xl font-medium leading-normal tracking-normal text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline"
                   >
@@ -129,9 +137,10 @@
                 <div class="mt-4 flex items-center justify-between">
                   <!-- Author meta -->
                   <div class="flex items-center justify-center">
-                    <a href="#" class="mr-3 rounded-lg bg-gray-50">
+                    <a href="#" class="mr-3 rounded-lg bg-gray-50" alt="{{ post.url | prepend: site.baseurl }}">
                       <img
                         class="lazy h-6 w-6 flex-shrink-0 rounded-lg object-cover object-center opacity-0 transition duration-300 ease-in-out"
+                        alt="{{ post.url | prepend: site.baseurl }}"
                         data-src="{{ site.site_url }}/images/jon.jpg"
                         alt="Jon Brown"
                       />
@@ -141,6 +150,7 @@
                       <a
                         class="font-medium text-gray-700 hover:underline"
                         href="#"
+                        alt="{{ post.url | prepend: site.baseurl }}"
                         >Jon Brown</a
                       >
                       <span class="text-gray-500 lg:hidden xl:inline-block">

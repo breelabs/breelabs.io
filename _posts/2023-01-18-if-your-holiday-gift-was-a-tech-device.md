@@ -2,7 +2,7 @@
 layout: post
 date: '2023-01-18'
 author: Jon Brown
-permalink: /blog/if-your-holiday-gift-was-a-tech-device,-it-s-time-to-change-the-password-/
+permalink: /blog/if-your-holiday-gift-was-a-tech-device/
 published: true
 title: "If Your Holiday Gift Was a Tech Device, It's Time to Change the Password"
 description: "If Your Holiday Gift Was a Tech Device, It's Time to Change the Password"

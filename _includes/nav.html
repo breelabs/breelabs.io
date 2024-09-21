@@ -8,10 +8,10 @@
           <!-- Logo-->
           <div class="flex shrink-0 items-center">
             <a href="{{ site.site_url }}/" class="lg:hidden">
-              <img src="{{ site.site_url }}/images/bree-logo.png" class="h-9 w-auto" />
+              <img src="{{ site.site_url }}/images/bree-logo.png" class="h-9 w-auto" alt="{{ post.url | prepend: site.baseurl }}" />
             </a>
             <a href="{{ site.site_url }}" class="hidden lg:block">
-              <img src="{{ site.site_url }}/images/bree-logo.png" class="h-9 w-auto" />
+              <img src="{{ site.site_url }}/images/bree-logo.png" class="h-9 w-auto" alt="{{ post.url | prepend: site.baseurl }}" />
             </a>
           </div>
 
@@ -22,18 +22,21 @@
             <!-- Current: "text-red-700", Default: "text-gray-800 hover:text-red-700 transition duration-300 ease-in-out" -->
             <a
               href="{{ site.site_url }}/about"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="px-3 py-1 text-md font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700"
             >
               About Us
             </a>
             <a
               href="{{ site.site_url }}/contact"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="px-3 py-1 text-md font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700"
             >
               Contact Us
             </a>
             <a
               href="{{ site.site_url }}/blog"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="px-3 py-1 text-md font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700"
             >
               Blog
@@ -46,7 +49,7 @@
           <!-- Search -->
           <div class="relative ml-6 h-10 w-full max-w-xxs rounded-3xl">
           
-         		 <a href="https://www.linkedin.com/company/breelabs/">
+         		 <a href="https://www.linkedin.com/company/breelabs/" alt="{{ post.url | prepend: site.baseurl }}">
                     <span class="m-1 inline-flex items-center rounded-full border border-gray-300/70 bg-transparent px-4 py-1 text-sm font-medium text-gray-800 transition duration-300 ease-in-out hover:text-red-700 sm:px-4 sm:py-1.5">
                       Follow Us!
                     </span>
@@ -92,39 +95,6 @@
         x-show="mobileMenuOpen"
         @keydown.escape.window="mobileMenuOpen = false"
       >
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <!-- Current: "bg-gray-50 text-red-700", Default: "text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out" -->
-          <a
-            href="category.html"
-            class="block rounded-lg bg-gray-50 px-4 py-3 font-medium text-red-700"
-            aria-current="page"
-            >Technology</a
-          >
-
-          <a
-            href="category.html"
-            class="block rounded-lg px-4 py-3 font-medium text-gray-800 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >Startup</a
-          >
-
-          <a
-            href="category.html"
-            class="block rounded-lg px-4 py-3 font-medium text-gray-800 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >Design</a
-          >
-
-          <a
-            href="category.html"
-            class="block rounded-lg px-4 py-3 font-medium text-gray-800 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >Innovation</a
-          >
-
-          <a
-            href="category.html"
-            class="block rounded-lg px-4 py-3 font-medium text-gray-800 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >Science</a
-          >
-        </div>
         <div class="border-t border-gray-300/70 pb-3 pt-4">
           <div
             class="mt-2 px-6 text-xs font-medium uppercase tracking-widest text-gray-500"
@@ -134,58 +104,32 @@
           <div class="mt-3 space-y-1 px-2">
             <!-- Current: "bg-gray-50 text-red-700", Default: "text-gray-600 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out" -->
             <a
-              href="index.html"
+              href="/"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
             >
               Home
             </a>
             <a
-              href="category.html"
-              class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >
-              Post archive
-            </a>
-            <a
-              href="post.html"
-              class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >
-              Post
-            </a>
-            <a
-              href="#"
-              class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >
-              Author page
-            </a>
-            <a
-              href="tag.html"
-              class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >
-              Tag page
-            </a>
-            <a
-              href="about.html"
+              href="/about"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
             >
               About us
             </a>
             <a
-              href="contact.html"
+              href="/contact"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
             >
               Contact us
             </a>
             <a
-              href="privacy-policy.html"
+              href="/privacy/"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
             >
               Privacy policy
-            </a>
-            <a
-              href="404.html"
-              class="block rounded-lg px-4 py-2 font-medium text-gray-600 transition duration-300 ease-in-out hover:bg-gray-50 hover:text-red-700"
-            >
-              404 page
             </a>
           </div>
         </div>

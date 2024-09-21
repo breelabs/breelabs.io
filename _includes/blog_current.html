@@ -4,10 +4,11 @@
     <!-- Featured Article -->
     <section class="relative mb-52 w-full lg:mb-40">
       <!-- Image -->
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.url | prepend: site.baseurl }}">
         <div class="aspect-h-2 aspect-w-5 animate-pulse bg-gray-50">
           <img
             data-src="{{ site.site_url }}{{ post.thumbnail }}"
+            alt="{{ post.url | prepend: site.baseurl }}"
             class="lazy object-cover object-center opacity-0 transition duration-300 ease-in-out"
           />
         </div>
@@ -27,6 +28,7 @@
           
             <a
               href="/blog/category/{{ category }}"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="transition-color relative text-sm font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
               >{{ category }}</a
             >
@@ -34,7 +36,7 @@
              {% if forloop.last != true %} {% endif %} {% endfor %}
              
              
-            <a href="{{ post.url | prepend: site.baseurl }}" class="group mt-3 block">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="group mt-3 block" alt="{{ post.url | prepend: site.baseurl }}">
               <h2
                 class="text-2xl font-medium tracking-normal text-gray-900 decoration-gray-800 decoration-2 transition duration-300 ease-in-out group-hover:underline sm:text-3xl sm:decoration-3 md:tracking-tight lg:text-4xl lg:leading-tight"
               >
@@ -47,6 +49,7 @@
               <div class="flex items-center justify-center">
                 <a
                   href="#"
+                  alt="{{ post.url | prepend: site.baseurl }}"
                   class="mr-3 animate-pulse rounded-lg bg-gray-50"
                 >
                   <img
@@ -62,6 +65,7 @@
                   <a
                     class="font-medium text-gray-700 hover:underline"
                     href="#"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     >Jon Brown</a
                   >
 

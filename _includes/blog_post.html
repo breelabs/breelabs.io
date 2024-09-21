@@ -7,6 +7,7 @@
           <img
             src="{{ site.site_url }}{{ page.thumbnail }}"
             class="object-cover object-center"
+            alt="{{ post.url | prepend: site.baseurl }}"
           />
         </div>
 
@@ -21,6 +22,7 @@
           
             <a
               href="/blog/category/{{ category }}"
+              alt="{{ post.url | prepend: site.baseurl }}"
               class="transition-color relative text-sm font-medium uppercase tracking-widest text-red-700 duration-300 ease-in-out hover:text-red-600"
               >{{ category }}  </a>
             
@@ -36,12 +38,12 @@
 
             <!-- Author meta -->
             <div class="mt-6 flex items-center sm:mt-8">
-              <a href="#" class="mr-3 flex-shrink-0">
+              <a href="#" class="mr-3 flex-shrink-0" alt="{{ post.url | prepend: site.baseurl }}">
                 <div class="relative">
                   <img
                     class="h-8 w-8 rounded-xl object-cover object-center sm:h-9 sm:w-9"
                     src="{{ site.site_url }}/images/jon.jpg"
-                    alt=""
+                    alt="Blog Post"
                   />
                   <span
                     class="absolute inset-0 rounded-xl shadow-inner"
@@ -107,6 +109,7 @@
                 <li>
                   <a
                     href="https://twitter.com/intent/tweet?text={{site.url}}{{page.url}}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="group flex h-10 w-10 items-center justify-center rounded-full border border-gray-300/70 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
                   >
                     <svg
@@ -126,6 +129,7 @@
                 <li>
                   <a
                     href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="group flex h-10 w-10 items-center justify-center rounded-full border border-gray-300/70 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
                   >
                     <svg
@@ -147,6 +151,7 @@
                 <li>
                   <a
                     href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}"
+                    alt="{{ post.url | prepend: site.baseurl }}"
                     class="group flex h-10 w-10 items-center justify-center rounded-full border border-gray-300/70 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
                   >
                     <svg
@@ -176,7 +181,7 @@
                     <img
                       class="h-20 w-20 rounded-2xl object-cover object-center sm:h-24 sm:w-24"
                       src="{{ site.site_url }}/images/jon.jpg"
-                      alt=""
+                      alt="Blog Post"
                     />
                     <span
                       class="absolute inset-0 rounded-2xl shadow-inner"
@@ -207,7 +212,7 @@
                   <!-- Author Social Links -->
                   <ul class="mt-3.5 flex items-center space-x-3">
                     <li>
-                      <a href="https://www.linkedin.com/in/jonbrown2/" class="group">
+                      <a href="https://www.linkedin.com/in/jonbrown2/" class="group" alt="{{ post.url | prepend: site.baseurl }}">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="h-5 w-5 text-gray-400 transition duration-300 ease-in-out group-hover:text-gray-600"

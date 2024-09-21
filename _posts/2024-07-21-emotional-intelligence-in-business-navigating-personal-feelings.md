@@ -2,7 +2,7 @@
 layout: post
 date: '2024-07-21'
 author: Jon Brown
-permalink: /blog/Emotional-Intelligence-in-Business-Navigating-Personal-Feelings-and-Building-Lasting-Relationships/
+permalink: /blog/emotional-intelligence-in-business-navigating-personal-feelings/
 published: true
 title: "Emotional Intelligence in Business: Navigating Personal Feelings and Building Lasting Relationships"
 description: "Emotional Intelligence in Business: Navigating Personal Feelings and Building Lasting Relationships"
