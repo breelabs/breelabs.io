@@ -31,7 +31,21 @@ description: Focused on helping aspiring entrepreneurs take their first step
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://breelabs.com" # the base hostname & protocol for your site, e.g. http://example.com
 mailchimp-list: //breelabs.us21.list-manage.com/subscribe/post?u=c334574c74c4f57096a0cf9be&amp;id=5e4d95a16a&amp;f_id=0022f0e6f0
-
+facebook:
+ app_id: 112614115061936
+ publisher: https://www.facebook.com/breelabs
+ admins: https://www.facebook.com/breelabs
+social:
+  name: Jon Brown
+  links:
+    - https://www.facebook.com/breelabs
+    - https://www.youtube.com/@breelabs
+#    - https://plus.google.com/
+    - https://www.linkedin.com/company/breelabs/
+#twitter_username: jekyllrb
+webmaster_verifications:
+  google: WrKoghT8yLHNso7CG7f6xsiV0ZlFGoL9SkIXX55Ia2g
+#  bing: 
 paginate: 4
 paginate_path: /blog/page/:num
 permalink: /blog/:categories/:year/:month/:day/:title.html
@@ -44,7 +58,21 @@ site_url:           https://breelabs.com
 base_href:          https://breelabs.com
 site_cdn:           https://breelabs.com
 
-
+feed:
+  path: atom.xml
+  
+compress_images:
+  images_path: "images/**/*.{gif,png,jpg,jpeg,svg}"
+  
+imageoptim:
+  # Disabling svgo because it throws some error
+  pngout: true
+  svgo: false
+  jpegrecompress:
+    allow_lossy: true
+    quality: 2
+    max_quality: 80 
+  
 #twitter_username: jekyllrb
 github_username:  jonbrown21
 
@@ -56,6 +84,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-compress-images
 
 # Exclude from processing.
 # The following items will not be processed, by default.

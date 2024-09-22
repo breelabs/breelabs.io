@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: humans.txt
+---
+/* TEAM */
+                            
+Your title: Jon Brown.                        
+Site: jon@breelabs.com                                               
+Location: Washington D.C., USA.
+
+
+/* THANKS */
+
+Breelabs Entrepreneurship & Leadership Coaching Services
+Name: https://breelabs.com
+
+                            
+/* SITE */
+                          
+Last update: {{ site.time | date: '%F' }}              
+Standards: HTML5, CSS3                  
+Components: Modernizr, jQuery, Bootstrap                          
+Software: BBEdit, Jekyll, GitHub
