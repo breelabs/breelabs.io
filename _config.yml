@@ -40,9 +40,10 @@ social:
   links:
     - https://www.facebook.com/breelabs
     - https://www.youtube.com/@breelabs
-#    - https://plus.google.com/
+    - https://github.com/breelabs
     - https://www.linkedin.com/company/breelabs/
-#twitter_username: jekyllrb
+twitter:
+  card: summary_large_image
 webmaster_verifications:
   google: WrKoghT8yLHNso7CG7f6xsiV0ZlFGoL9SkIXX55Ia2g
 #  bing: 
