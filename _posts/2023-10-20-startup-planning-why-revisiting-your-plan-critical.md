@@ -18,7 +18,8 @@ image: /images/covers/2023/Header-Plan.png
 thumbnail: /images/covers/2023/Header-Plan.png
 cta: 2
 comments: true
-featuredPost: true
+featuredPost: false
+featuredHome: false
 ---
 As I reflected on my business journey, at every stage of my business development I was always planning for the future. At the earlier stages of my business the goals were to get clients and sales. I spent the first few years really learning and understanding the target client that I was looking for and understanding my competition. 
 
