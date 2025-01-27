@@ -17,7 +17,10 @@ cta: 2
 comments: true
 featuredPost: false
 featuredHome: true
+series: msp
 ---
+
+{% include series.html id="msp" %}
 
 ## Lessons Learned: Build a strong foundation
 

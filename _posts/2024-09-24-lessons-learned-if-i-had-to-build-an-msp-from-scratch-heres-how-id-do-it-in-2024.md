@@ -17,7 +17,9 @@ cta: 2
 comments: true
 featuredPost: true
 featuredHome: false
+series: msp
 ---
+{% include series.html id="msp" %}
 
 ## Lessons Learned: Do no harm.
 
