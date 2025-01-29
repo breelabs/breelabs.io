@@ -11,6 +11,7 @@ tags:
 categories:
   - business
   - articles
+  - video
 image: /images/covers/2025/business_25.png
 thumbnail: /images/covers/2025/business_25.png
 cta: 2
@@ -101,3 +102,5 @@ In consulting, relationships are everything. Networking opens doors to new oppor
 Starting a consulting company in 2025 can be a fulfilling and transformative experience, but it’s not without its challenges. Success requires a blend of careful planning, adaptability, and resilience. By preparing financially, understanding the risks, and implementing strategic practices, you can increase your chances of building a thriving consulting business.
 
 If you’re considering this leap, take the time to map out your journey. And remember: behind every inspiring consulting story is a foundation of hard work, foresight, and perseverance.
+
+{% include videos/video-shorts.html id="SEtso479jeA" header="/images/covers/2025/good_cybersecurity.png" %}
