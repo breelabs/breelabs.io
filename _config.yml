@@ -30,7 +30,7 @@ email: jon@breelabs.com
 description: Focused on helping aspiring entrepreneurs take their first step
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://breelabs.com" # the base hostname & protocol for your site, e.g. http://example.com
-mailchimp-list: //breelabs.us21.list-manage.com/subscribe/post?u=c334574c74c4f57096a0cf9be&amp;id=5e4d95a16a&amp;f_id=0022f0e6f0
+mailchimp-list: https://assets.mailerlite.com/jsonp/1303120/forms/144842435086780321/subscribe
 facebook:
  app_id: 112614115061936
  publisher: https://www.facebook.com/breelabs

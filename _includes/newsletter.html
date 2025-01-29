@@ -16,15 +16,16 @@
         
 
           <!-- Newsletter signup container -->
-          <div class="mt-8 flex w-full flex-col items-center sm:mt-10">
+          <div class="mt-8 flex w-full flex-col items-center sm:mt-10 ml-form-embedContainer ml-subscribe-form ml-subscribe-form-22103855" id="mlb2-22103855">
             <div class="relative h-14 w-full max-w-xl rounded-3xl">
               <!-- Newsletter signup form -->
               <form
                 action="{{site.mailchimp-list}}"
                 method="post"
-                class="group rounded-3xl border border-gray-300/70 bg-transparent transition duration-300 ease-in-out"
+                class="group rounded-3xl border border-gray-300/70 bg-transparent transition duration-300 ease-in-out row-form"
                 name="mc-embedded-subscribe-form"
                 target="_blank" novalidate
+                data-code=""
               >
               <input
                   type="email"
@@ -32,9 +33,14 @@
                   required
                   placeholder="Enter your email"
                   autocomplete="email"
-                  id="mce-EMAIL"
-                  name="EMAIL"
+                  aria-label="email" 
+                  aria-required="true"
+                  name="fields[email]"
+                  autocomplete="email" 
+                  aria-invalid="false"
                 />
+                <input type="hidden" name="ml-submit" value="1" aria-invalid="false">
+                <input type="hidden" name="anticsrf" value="true" aria-invalid="false">
                 <button
                   type="submit"
                   name="subscribe"
@@ -43,7 +49,24 @@
                   Subscribe
                 </button>
               </form>
+              
+              <div class="ml-form-successBody row-success text-center text-sm text-gray-500" style="display: none">
+
+				<div class="ml-form-successContent">
+				  
+					<p><strong>Thank you!</strong> You have successfully joined our subscriber list.</p>
+					
+				  
+				</div>
+
+          	   </div>
+          
+          
             </div>
+            
+            
+          
+          
 
             <p class="mt-4 text-center text-sm text-gray-500">
               Your privacy is important to us. We promise not to send you spam!
