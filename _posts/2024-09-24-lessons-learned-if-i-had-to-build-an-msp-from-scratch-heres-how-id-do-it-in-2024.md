@@ -15,7 +15,7 @@ image: /images/covers/2024/Header-Ideal-MSP-1.png
 thumbnail: /images/covers/2024/Header-Ideal-MSP-1.png
 cta: 2
 comments: true
-featuredPost: true
+featuredPost: false
 featuredHome: false
 series: msp
 ---
