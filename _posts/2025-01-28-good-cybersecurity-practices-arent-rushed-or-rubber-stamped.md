@@ -17,8 +17,6 @@ image: /images/covers/2025/good_cybersecurity.png
 thumbnail: /images/covers/2025/good_cybersecurity.png
 cta: 2
 comments: true
-featuredPost: true
-featuredHome: false
 ---
 Cybersecurity is no longer a luxury or an afterthought—it’s an absolute necessity. But how can you tell if the company you work for, as a security professional, truly values cybersecurity? Let’s explore some clear indicators that demonstrate a company’s commitment to implementing robust security practices in-house.
 

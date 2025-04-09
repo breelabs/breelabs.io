@@ -16,8 +16,6 @@ image: /images/covers/2025/business_25.png
 thumbnail: /images/covers/2025/business_25.png
 cta: 2
 comments: true
-featuredPost: false
-featuredHome: true
 ---
 # Starting a Consulting Company in 2025: What You Need to Know
 
