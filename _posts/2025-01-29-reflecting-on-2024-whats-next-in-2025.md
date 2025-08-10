@@ -17,7 +17,7 @@ image: /images/covers/2025/reflecting_2024.png
 thumbnail: /images/covers/2025/reflecting_2024.png
 cta: 2
 comments: true
-featuredPost: true
+featuredPost: false
 featuredHome: false
 ---
 

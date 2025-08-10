@@ -15,8 +15,8 @@ image: /images/covers/2025/IT_support_tech.png
 thumbnail: /images/covers/2025/IT_support_tech.png
 cta: 2
 comments: true
-featuredPost: false
-featuredHome: true
+featuredPost: true
+featuredHome: false
 ---
 
 I started thinking about what it means to be a great IT technician. As one of my now roles, IT technician was thrust upon me, among other things, by choice. Primarily because I enjoy it, and so it got me thinking, why do I love it so much? Over the years I have worn the hat of support specialist, web developer, IT manager, IT director, and CEO. I am now the information systems security officer but not matter how hard I try, the pull, and draw of troubleshooting issues pulls on me. 
