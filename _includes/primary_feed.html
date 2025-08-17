@@ -120,7 +120,7 @@
             <!-- Articles -->
             <div class="space-y-6 pt-6 sm:space-y-5 lg:space-y-6 xl:space-y-5">
             
-            {% assign posts = site.categories.tips | where_exp:"post", "post.url != page.url" | sample:4 %}
+            {% assign posts = site.categories.articles | where_exp:"post", "post.url != page.url" | sample:4 %}
             {% for post in posts %}
    			 {% if post.url %}
     
