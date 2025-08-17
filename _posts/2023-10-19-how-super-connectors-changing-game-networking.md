@@ -13,7 +13,7 @@ tags:
 categories:
   - articles
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-Side.png
 thumbnail: /images/covers/2023/Header-Side.png
 cta: 2

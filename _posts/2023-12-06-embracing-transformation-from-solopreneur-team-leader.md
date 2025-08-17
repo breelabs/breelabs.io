@@ -13,7 +13,7 @@ tags:
 categories:
   - articles
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-FirstHire.jpeg
 thumbnail: /images/covers/2023/Header-FirstHire.jpeg
 cta: 2

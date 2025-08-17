@@ -12,7 +12,7 @@ tags:
   - iOS
 categories:
   - articles
-  - video
+  - videos
 image: /images/covers/2025/good_cybersecurity.png
 thumbnail: /images/covers/2025/good_cybersecurity.png
 cta: 2

@@ -13,7 +13,7 @@ tags:
 categories:
   - articles
   - videos
-  - video
+  - videos
 image: /images/covers/2024/Header-Manager-Mentor.jpg
 thumbnail: /images/covers/2024/Header-Manager-Mentor.jpg
 cta: 2

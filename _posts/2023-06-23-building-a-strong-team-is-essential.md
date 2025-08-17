@@ -13,7 +13,7 @@ tags:
 categories:
   - podcast
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-StrongTeam.png
 thumbnail: /images/covers/2023/Header-StrongTeam.png
 cta: 2

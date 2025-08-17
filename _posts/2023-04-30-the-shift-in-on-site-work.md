@@ -13,7 +13,7 @@ tags:
 categories:
   - podcast
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-OnSite.png
 thumbnail: /images/covers/2023/Header-OnSite.png
 cta: 2

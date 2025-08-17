@@ -12,7 +12,7 @@ tags:
   - iOS
 categories:
   - articles
-  - video
+  - videos
 image: /images/covers/2025/reflecting_2024.png
 thumbnail: /images/covers/2025/reflecting_2024.png
 cta: 2

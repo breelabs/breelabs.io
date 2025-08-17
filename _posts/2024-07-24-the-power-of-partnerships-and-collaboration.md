@@ -13,7 +13,7 @@ tags:
 categories:
   - articles
   - videos
-  - video
+  - videos
 image: /images/covers/2024/Header-Partnerships.png
 thumbnail: /images/covers/2024/Header-Partnerships.png
 cta: 2

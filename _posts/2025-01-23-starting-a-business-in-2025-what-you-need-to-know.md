@@ -11,7 +11,7 @@ tags:
 categories:
   - business
   - articles
-  - video
+  - videos
 image: /images/covers/2025/business_25.png
 thumbnail: /images/covers/2025/business_25.png
 cta: 2

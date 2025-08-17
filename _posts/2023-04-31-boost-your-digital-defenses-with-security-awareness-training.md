@@ -13,7 +13,7 @@ tags:
 categories:
   - podcast
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-Cyber.png
 thumbnail: /images/covers/2023/Header-Cyber.png
 cta: 2

@@ -13,7 +13,7 @@ tags:
 categories:
   - podcast
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-Shout.jpeg
 thumbnail: /images/covers/2023/Header-Shout.jpeg
 cta: 2

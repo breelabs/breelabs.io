@@ -13,7 +13,7 @@ tags:
 categories:
   - podcast
   - videos
-  - video
+  - videos
 image: /images/covers/2023/Header-Mergers.png
 thumbnail: /images/covers/2023/Header-Mergers.png
 cta: 2
